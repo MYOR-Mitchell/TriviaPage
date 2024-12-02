@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Link JavaScript File -->
+    <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Quiz</a></li>
+                <li><a href="#" class="nav-link">Leaderboard</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="hero-title">The Grand Line Adventure Quiz!</h1>
+            <div class="hero-image-container">
+                <img src="images/header-img.jpg" alt="One Piece Crew" class="hero-image">
+            </div>
+            <p class="hero-description">
+                Step into the world of <em>One Piece</em> and test your knowledge! <br>
+                How far can you make it? To the end!?<br>
+                Let's find out, but miss three questions and you're out!
+            </p>
+            <button class="start-quiz-btn" onclick="startQuiz()">Start Quiz</button>
+        </section>
+    </header>
+
+    <main>
+        <section class="quiz-section" id="quiz-section" style="display: none;">
+            <button class="close-quiz-btn" onclick="closeQuiz()">X</button>
+            <h2>One Piece Quiz</h2>
+            <div id="quiz-questions"></div>
+            <div id="question-indicator"></div>
+            <div id="wrong-indicator"></div>
+            <button id="submit-quiz" onclick="submitQuiz()">Submit Answer</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="footer-section">
+     </footer>
+
+</body>
+
+</html>
