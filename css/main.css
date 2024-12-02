@@ -3,22 +3,22 @@
 
 /* Body */
 body {
-    background-color: #1A1A1D;
-    color: #E5E5E5;
-    box-sizing: border-box;
+    background: linear-gradient(135deg, #232526, #414345); /* Metallic gray gradient */
+    color: #F0F0F0;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: #2E3B4E;
-    border: 2px solid #5C6670;
+    background: linear-gradient(45deg, #1f78c1, #001f3f); /* Deep blue gradient */
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px;
 }
 
 .nav-list {
@@ -34,30 +34,24 @@ body {
 
 .nav-link {
     text-decoration: none;
-    background: #1F2933;
-    color: #E5E9F0;
+    color: #FFD700; /* Gold color to match One Piece theme */
     font-size: 20px;
     font-weight: bold;
-    border: 2px solid #5C6670;
-    border-radius: 8px;
-    text-align: center;
-    transition: background 0.3s, color 0.3s, border-color 0.3s;
-    padding: 20px 0;
-    width: 150px;
-    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
 }
 
 .nav-link:hover {
-    background: #394B59;
-    color: #FFFFFF;
-    border-color: #FFFFFF;
+    background: #FFD700; /* Gold background on hover */
+    color: #1f78c1; /* Deep blue text on hover */
 }
 
 /* Hero Section */
 .hero-section {
     text-align: center;
     padding: 40px 20px;
-    background-color: #2E3B4E;
+    background: linear-gradient(135deg, #3b3b3b, #1f1f1f); /* Metallic black-gray */
     border-radius: 10px;
     border: 2px solid #5C6670;
     margin: 20px 100px;
@@ -68,7 +62,7 @@ body {
 .hero-title {
     font-size: 2.5em;
     margin: 0;
-    color: #FFD700;
+    color: #FFD700; /* Gold for a standout title */
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -81,60 +75,61 @@ body {
     height: auto;
     border-radius: 10px;
     border: 2px solid #5C6670;
-    filter: brightness(0.8) contrast(1.2) sepia(0.5);
+    filter: brightness(0.9) contrast(1.2);
 }
 
 .hero-description {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin: 20px 0;
     color: #E5E5E5;
     text-shadow: 1px 1px 2px #000000;
 }
 
-
 /* Footer */
 .footer-section {
-    background-color: #2E3B4E;
-    border: 2px solid #5C6670;
+    background: linear-gradient(45deg, #1f78c1, #001f3f); /* Blue gradient */
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
     margin: auto;
+    color: #FFD700;
 }
 
 /* Start Quiz Button */
 .start-quiz-btn {
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 15px 30px;
+    font-size: 1.2em;
     cursor: pointer;
-    background-color: #007bff;
+    background: linear-gradient(45deg, #f39c12, #e74c3c); /* Gradient from gold to red */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .start-quiz-btn:hover {
-    background-color: #0056b3;
+    background: linear-gradient(45deg, #e67e22, #d35400); /* Darker gold-red for hover */
 }
 
 /* Quiz Section */
 .quiz-section {
     padding: 20px;
-    background-color: #2E3B4E;
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Dark metallic gradient */
     margin: 20px auto;
     max-width: 600px;
     border-radius: 10px;
     border: 2px solid #5C6670;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     position: relative;
 }
 
 .quiz-section h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #FFD700; /* Gold for headings */
 }
 
 .question {
@@ -154,18 +149,19 @@ body {
 #submit-quiz {
     display: block;
     margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 15px 30px;
+    font-size: 1.2em;
     cursor: pointer;
-    background-color: #28a745;
+    background: linear-gradient(45deg, #27ae60, #2ecc71); /* Gradient green for submit */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #submit-quiz:hover {
-    background-color: #218838;
+    background: linear-gradient(45deg, #229954, #27ae60); /* Darker green on hover */
 }
 
 /* Close Quiz Button */
@@ -173,7 +169,7 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #ff4d4d;
+    background: linear-gradient(45deg, #e74c3c, #c0392b); /* Red gradient for close */
     color: white;
     border: none;
     border-radius: 50%;
@@ -182,8 +178,9 @@ body {
     font-size: 1.2em;
     cursor: pointer;
     transition: background 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .close-quiz-btn:hover {
-    background-color: #ff1a1a;
+    background: linear-gradient(45deg, #c0392b, #a93226); /* Darker red on hover */
 }

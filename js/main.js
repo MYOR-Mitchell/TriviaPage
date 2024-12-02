@@ -3,108 +3,6 @@ let score = 0;
 let wrongAnswers = 0;
 let shuffledQuestions = [];
 
-const questions = [
-    {
-        question: "Who is the captain of the Straw Hat Pirates?",
-        options: ["Luffy", "Zoro", "Nami", "Sanji"],
-        answer: "Luffy"
-    },
-    {
-        question: "What is the name of the Straw Hat Pirates' ship?",
-        options: ["Going Merry", "Thousand Sunny", "Red Force", "Moby Dick"],
-        answer: "Thousand Sunny"
-    },
-    {
-        question: "Who is the swordsman of the Straw Hat Pirates?",
-        options: ["Luffy", "Zoro", "Nami", "Sanji"],
-        answer: "Zoro"
-    },
-    {
-        question: "Which member of the Straw Hat Pirates is a reindeer?",
-        options: ["Luffy", "Zoro", "Nami", "Chopper"],
-        answer: "Chopper"
-    },
-    {
-        question: "Who is the navigator of the Straw Hat Pirates?",
-        options: ["Luffy", "Zoro", "Nami", "Sanji"],
-        answer: "Nami"
-    },
-    {
-        question: "What is the dream of the Straw Hat Pirates' cook, Sanji?",
-        options: ["Find All Blue", "Become Pirate King", "Find One Piece", "Become Strongest Swordsman"],
-        answer: "Find All Blue"
-    },
-    {
-        question: "Which member of the Straw Hat Pirates is a cyborg?",
-        options: ["Luffy", "Franky", "Nami", "Sanji"],
-        answer: "Franky"
-    },
-    {
-        question: "Who is the archaeologist of the Straw Hat Pirates?",
-        options: ["Luffy", "Zoro", "Robin", "Sanji"],
-        answer: "Robin"
-    },
-    {
-        question: "What is the name of the Straw Hat Pirates' musician?",
-        options: ["Luffy", "Brook", "Nami", "Sanji"],
-        answer: "Brook"
-    },
-    {
-        question: "Who is the shipwright of the Straw Hat Pirates?",
-        options: ["Luffy", "Franky", "Nami", "Sanji"],
-        answer: "Franky"
-    },
-    {
-        question: "Who is the doctor of the Straw Hat Pirates?",
-        options: ["Chopper", "Luffy", "Zoro", "Sanji"],
-        answer: "Chopper"
-    },
-    {
-        question: "Who is the sniper of the Straw Hat Pirates?",
-        options: ["Usopp", "Luffy", "Zoro", "Sanji"],
-        answer: "Usopp"
-    },
-    {
-        question: "What is the name of the Straw Hat Pirates' first ship?",
-        options: ["Going Merry", "Thousand Sunny", "Red Force", "Moby Dick"],
-        answer: "Going Merry"
-    },
-    {
-        question: "Who is the helmsman of the Straw Hat Pirates?",
-        options: ["Jinbe", "Luffy", "Zoro", "Sanji"],
-        answer: "Jinbe"
-    },
-    {
-        question: "Who is the Straw Hat Pirates' archaeologist?",
-        options: ["Robin", "Luffy", "Zoro", "Sanji"],
-        answer: "Robin"
-    },
-    {
-        question: "What is the name of the Straw Hat Pirates' second ship?",
-        options: ["Thousand Sunny", "Going Merry", "Red Force", "Moby Dick"],
-        answer: "Thousand Sunny"
-    },
-    {
-        question: "Who is the Straw Hat Pirates' musician?",
-        options: ["Brook", "Luffy", "Zoro", "Sanji"],
-        answer: "Brook"
-    },
-    {
-        question: "Who is the Straw Hat Pirates' shipwright?",
-        options: ["Franky", "Luffy", "Zoro", "Sanji"],
-        answer: "Franky"
-    },
-    {
-        question: "Who is the Straw Hat Pirates' cook?",
-        options: ["Sanji", "Luffy", "Zoro", "Nami"],
-        answer: "Sanji"
-    },
-    {
-        question: "Who is the Straw Hat Pirates' swordsman?",
-        options: ["Zoro", "Luffy", "Sanji", "Nami"],
-        answer: "Zoro"
-    }
-];
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -214,3 +112,107 @@ function resetQuiz() {
     wrongAnswers = 0;
     shuffledQuestions = [];
 }
+
+
+const questions = [
+    {
+        question: "Who is the captain of the Straw Hat Pirates?",
+        options: ["Luffy", "Zoro", "Nami", "Sanji"],
+        answer: "Luffy"
+    },
+    {
+        question: "What is the name of the Straw Hat Pirates' current ship?",
+        options: ["Going Merry", "Thousand Sunny", "Red Force", "Moby Dick"],
+        answer: "Thousand Sunny"
+    },
+    {
+        question: "Who is the swordsman of the Straw Hat Pirates?",
+        options: ["Luffy", "Zoro", "Nami", "Sanji"],
+        answer: "Zoro"
+    },
+    {
+        question: "Which member of the Straw Hat Pirates is a reindeer and also a doctor?",
+        options: ["Chopper", "Zoro", "Brook", "Sanji"],
+        answer: "Chopper"
+    },
+    {
+        question: "Who is the navigator of the Straw Hat Pirates?",
+        options: ["Robin", "Luffy", "Nami", "Sanji"],
+        answer: "Nami"
+    },
+    {
+        question: "What is the name of the Straw Hat Pirates' archaeologist?",
+        options: ["Robin", "Nami", "Usopp", "Zoro"],
+        answer: "Robin"
+    },
+    {
+        question: "Which member of the Straw Hat Pirates dreams of finding the All Blue?",
+        options: ["Sanji", "Zoro", "Nami", "Chopper"],
+        answer: "Sanji"
+    },
+    {
+        question: "Who is the shipwright of the Straw Hat Pirates?",
+        options: ["Franky", "Usopp", "Luffy", "Nami"],
+        answer: "Franky"
+    },
+    {
+        question: "Who is the Straw Hat Pirates' musician?",
+        options: ["Brook", "Sanji", "Luffy", "Franky"],
+        answer: "Brook"
+    },
+    {
+        question: "Who is the sniper of the Straw Hat Pirates?",
+        options: ["Usopp", "Nami", "Chopper", "Zoro"],
+        answer: "Usopp"
+    },
+    {
+        question: "Who is the helmsman of the Straw Hat Pirates?",
+        options: ["Jinbe", "Luffy", "Sanji", "Zoro"],
+        answer: "Jinbe"
+    },
+    {
+        question: "Which member of the Straw Hat Pirates is a cyborg?",
+        options: ["Franky", "Chopper", "Sanji", "Brook"],
+        answer: "Franky"
+    },
+    {
+        question: "What is Luffy's Devil Fruit ability?",
+        options: ["Gomu Gomu no Mi", "Mera Mera no Mi", "Hana Hana no Mi", "Hito Hito no Mi"],
+        answer: "Gomu Gomu no Mi"
+    },
+    {
+        question: "Who was the original shipwright of the Straw Hat Pirates' first ship, the Going Merry?",
+        options: ["Merry", "Franky", "Iceburg", "Tom"],
+        answer: "Merry"
+    },
+    {
+        question: "What role does Nami play in the crew?",
+        options: ["Navigator", "Doctor", "Cook", "Sniper"],
+        answer: "Navigator"
+    },
+    {
+        question: "Which Straw Hat member has the power of the Soul-Soul Fruit?",
+        options: ["Brook", "Robin", "Jinbe", "Franky"],
+        answer: "Brook"
+    },
+    {
+        question: "Who was the first crew member to join Luffy on his journey?",
+        options: ["Zoro", "Nami", "Usopp", "Sanji"],
+        answer: "Zoro"
+    },
+    {
+        question: "What is the name of the treasure that the Straw Hat Pirates are seeking?",
+        options: ["One Piece", "All Blue", "Gold Roger's Fortune", "Thousand Sunny"],
+        answer: "One Piece"
+    },
+    {
+        question: "Who is known as the 'Knight of the Sea'?",
+        options: ["Jinbe", "Sanji", "Zoro", "Usopp"],
+        answer: "Jinbe"
+    },
+    {
+        question: "Which island was the Straw Hat Pirates' first major destination in the Grand Line?",
+        options: ["Whiskey Peak", "Little Garden", "Drum Island", "Alabasta"],
+        answer: "Whiskey Peak"
+    }
+];
